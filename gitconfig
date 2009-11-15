@@ -1,6 +1,6 @@
 [user]
-	name = Ryan Bates
-	email = ryan@railscasts.com
+	name = Jordi Romero
+	email = jordi@jrom.net
 [alias]
 	co = checkout
 [color]
@@ -8,7 +8,12 @@
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/rbates/.gitignore
+	excludesfile = /Users/jordi/.gitignore
 	editor = mate -w
 [apply]
 	whitespace = nowarn
+[push]
+	default = matching
+[github]
+  user = jrom
+  token = 1234
