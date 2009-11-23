@@ -3,6 +3,7 @@
 	email = jordi@jrom.net
 [alias]
 	co = checkout
+  msg = commit --allow-empty -m
 [color]
 	diff = auto
 	status = auto
