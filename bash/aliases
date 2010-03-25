@@ -33,3 +33,5 @@ function c { cd ~/code/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
+
+alias time='gtime -f "%e %U %S %P" '
