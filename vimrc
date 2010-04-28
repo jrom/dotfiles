@@ -45,7 +45,7 @@ highlight StatusLine      ctermbg=Black ctermfg=LightGrey
 " ----------------------------------------------------------------------------
 
 set list
-set listchars=trail:.,tab:>.,eol:Â
+set listchars=trail:.,tab:>.,eol:$
 highlight SpecialKey ctermfg=DarkGray ctermbg=Black
 
 " ----------------------------------------------------------------------------
