@@ -36,3 +36,5 @@ function c { cd ~/code/$1; }
 alias reload='. ~/.bash_profile'
 
 alias time='gtime -f "%e %U %S %P" '
+
+alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
