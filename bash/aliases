@@ -8,7 +8,7 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # git
-alias gl='git pull'
+alias gl='git pull --rebase'
 alias gp='git push'
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -38,3 +38,5 @@ alias reload='. ~/.bash_profile'
 alias time='gtime -f "%e %U %S %P" '
 
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
+alias preview='open -a Preview -f'
+
