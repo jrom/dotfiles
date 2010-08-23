@@ -41,4 +41,5 @@ alias time='gtime -f "%e %U %S %P" '
 
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 alias preview='open -a Preview -f'
+alias pg='postgres -D /usr/local/var/postgres/'
 
