@@ -13,13 +13,20 @@ alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
+alias gc='git commit -v'
+alias gca='git commit -va'
+alias gb='git branch -v'
 alias gs='git status'
-alias gss='git status -s'
+alias gss='git status -sb'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+function gco {
+  if [ -z "$1" ]; then
+    git checkout master
+  else
+    git checkout $1
+  fi
+}
 
 # rails
 alias sc='script/console'
