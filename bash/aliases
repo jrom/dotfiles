@@ -42,7 +42,7 @@ alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
-
+alias cleardb='rake db:drop db:create db:schema:load db:seed db:test:prepare'
 alias be='bundle exec'
 
 # changing directory to code project
