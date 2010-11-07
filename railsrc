@@ -6,15 +6,12 @@ begin
 rescue LoadError
 end
 
-def change_log(stream)
+def l(stream = STDOUT)
   ActiveRecord::Base.logger = Logger.new(stream)
-  ActiveRecord::Base.clear_active_connections!
-end
-
-def show_log
-  change_log(STDOUT)
-end
-
-def hide_log
-  change_log(nil)
+  if Rails::VERSION::MAJOR >= 2 and Rails::VERSION::MINOR >= 2
+    ActiveRecord::Base.connection_pool.clear_reloadable_connections!
+  else
+    ActiveRecord::Base.clear_active_connections!
+  end
+  "logger reset!"
 end
