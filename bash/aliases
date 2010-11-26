@@ -66,3 +66,5 @@ alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 alias preview='open -a Preview -f'
 alias pg='postgres -D /usr/local/var/postgres/'
 
+alias tunnel='ssh -D 8080 -f -C -q -N'
+
