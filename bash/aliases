@@ -68,3 +68,5 @@ alias pg='postgres -D /usr/local/var/postgres/'
 
 alias tunnel='ssh -D 8080 -f -C -q -N'
 
+function repeat { n=$1; shift; for ((i=0;i<n;i++)) do $@; done; }
+
