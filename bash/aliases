@@ -70,3 +70,9 @@ alias tunnel='ssh -D 8080 -f -C -q -N'
 
 function repeat { n=$1; shift; for ((i=0;i<n;i++)) do $@; done; }
 
+function httplot {
+  gnuplot -e "set terminal postscript color; set output \"$2.ps\"; set xlabel \"Concurrent requests\"; set ylabel \"ms\"; plot \"$1.tsv\" using 8 with lines title \"Response time\"";
+}
+
+alias checkhosted='HOSTED=$(ey ssh "cat /data/Teambox2/current/REVISION" -e hosted)'
+
