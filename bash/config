@@ -7,6 +7,8 @@ export EDITOR="mvim"
 export CLICOLOR=1
 export LSCOLORS=bxfxcxdxbxegebabagacad
 
+export LESS="-R"
+
 function __git_dirty {
   git diff --quiet HEAD &>/dev/null 
   [ $? == 1 ] && echo "!"
