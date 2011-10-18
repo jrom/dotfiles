@@ -19,7 +19,7 @@ function __git_branch {
 }
 
 function __rbenv_ruby {
-  echo "1.9.7"
+  rbenv version | cut -f 1 -d " "
 }
 
 export TERM="xterm-color"
