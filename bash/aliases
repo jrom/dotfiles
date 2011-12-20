@@ -77,3 +77,4 @@ function httplot {
 alias checkhosted='HOSTED=$(ey ssh "cat /data/Teambox2/current/REVISION" -e hosted)'
 alias permis="stat -f '%p %N'"
 
+alias console="ssh -t tb4util1 'cd /data/teambox/current; make console'"
