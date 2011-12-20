@@ -22,7 +22,7 @@ function __rbenv_ruby {
   rbenv version | cut -f 1 -d " "
 }
 
-export TERM="xterm-color"
+export TERM="xterm-256color"
 
 bash_prompt() {
   local NONE="\[\033[0m\]"    # unsets color to term's fg color
