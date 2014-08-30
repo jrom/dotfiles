@@ -10,7 +10,7 @@
 	branch = auto
 [core]
 	excludesfile = /Users/jordi/.gitignore
-	editor = vim -f
+	editor = mvim -vf
 [apply]
 	whitespace = nowarn
 [push]
