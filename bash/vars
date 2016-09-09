@@ -1,0 +1,2 @@
+export SESSION_KEY=paco
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt

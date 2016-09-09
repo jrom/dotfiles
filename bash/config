@@ -8,6 +8,7 @@ export CLICOLOR=1
 export LSCOLORS=bxfxcxdxbxegebabagacad
 
 export LESS="-R"
+export ANSIBLE_NOCOWS=1
 
 function __git_dirty {
   git diff --quiet HEAD &>/dev/null 

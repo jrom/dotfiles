@@ -17,3 +17,9 @@
 	default = tracking
 [github]
   user = jrom
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false

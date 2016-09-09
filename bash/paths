@@ -1,7 +1,22 @@
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+export PATH="~/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
 export PATH="/opt/local/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+setjdk() {
+  export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+}
+
+export PATH="${JAVA_HOME}/bin:$PATH"
+export PATH="/Volumes/RubyEncoder/RubyEncoder.app/Contents/MacOS/:$PATH"
+
+export GOPATH="$HOME/.go"
+
+[[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
+
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
+export NVM_DIR="/Users/jordi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export PATH="$HOME/.bin:$PATH"
